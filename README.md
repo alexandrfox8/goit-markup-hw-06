@@ -1,2 +1,2 @@
-# goit-markup-hw-06
- homework
+# goit-markup-hw-02
+ study
