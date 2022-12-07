@@ -570,6 +570,7 @@ ul {
     padding-top: 12px;
 }
 .subscription-titel {
+    display: block;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -899,6 +900,7 @@ ul {
     margin-top: 4px;
     background-color: transparent;
     padding-left: 42px;
+    padding-right: 12px;
 
     border-color: rgba(33, 33, 33, 0.2);
 
@@ -947,38 +949,47 @@ ul {
 .contract {
     color: #2196F3;
     text-decoration: underline;
+    margin-left: 5px;
 }
 
 .contract-text {
-    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.checkbox-aria {
     display: inline-block;
+    width: 100%;
     margin-bottom: 30px;
-    margin-left: 8px;
     align-items: center;
     text-align: center;
 }
 
-.checkbox-aria {
-    display: inline-block;
-}
 
 .checkbox-icon {
-    display: inline-block;
     width: 15px;
     height: 15px;
     border: 2px solid #212121;
     border-radius: 4px;
+    margin-right: 8px;
+    background-color: #fff;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .checkbox-icon {
-    background-image: url(../images/icon-check.svg);
     background-size: contain;
     background-origin: border-box;
     border-color: transparent;
+    background-color: #2196F3;
 }
 
 .checkbox-label {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
  
 .checkbox {

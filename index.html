@@ -266,9 +266,9 @@
                     </ul>
             </div>
             <div class="subscription">
-                <h3 class="subscription-titel">ПІДПИШІТСЯ НА РОЗСИЛКУ</h3>
+                <label class="subscription-titel" for="e-mail">ПІДПИШІТСЯ НА РОЗСИЛКУ</label>
                 <form>
-                    <input type="text" name="mail" class="subscription-input" placeholder="E-mail">
+                    <input type="text" name="mail" class="subscription-input" placeholder="E-mail" id="e-mail">
                     <button class="subscription-button" type="submit">Підписатися
                         <img class="subscription-item" src="./images/icon-send.svg" width="24" height="24">
                     </button>
@@ -286,30 +286,34 @@
 
             <form class="modal-form">
                 <div class="form-field">
-                    <label class="form-label">Ім'я</label>
-                    <input type="text" class="form-input">
+                    <label class="form-label" for="name">Ім'я</label>
+                    <input type="text" class="form-input" id="name">
                     <div class="field-icon"> 
                         <svg width="18" height="18" class="form-svg">
                             <use href="./images/symbol-defs.svg#icon-person-black"></use>
-                        </svg></div>
+                        </svg>
+                    </div>
                 </div>
                 <div class="form-field">
-                    <label class="form-label">Телефон</label>
-                    <input type="tel" class="form-input">
+                    <label class="form-label" for="tel">Телефон</label>
+                    <input type="tel" class="form-input" id="tel">
                     <div class="field-icon"> 
                         <svg width="18" height="18" class="form-svg">
                             <use href="./images/symbol-defs.svg#icon-phone-black"></use>
-                        </svg></div>
+                        </svg>
+                    </div>
                 </div>
+
                 <div class="form-field">
-                    <label class="form-label">Пошта</label>
-                    <input type="email" class="form-input">
-                    <span class="field-icon"> 
+                    <label class="form-label" for="mail">Пошта</label>
+                    <input type="email" class="form-input" id="mail">
+                    <div в class="field-icon"> 
                         <svg width="18" height="18" class="form-svg">
                             <use href="./images/symbol-defs.svg#icon-email-black"></use>
                         </svg>
-                    </span>
+                    </div>
                 </div>
+
                 <div class="form-field">
                     <label class="form-label">Коментар</label>
                     <textarea name="" id="" rows="10" class="form-input textarea"></textarea>
@@ -319,9 +323,10 @@
                     <span class="contract-text"> 
                         <label class="checkbox-label">
                         <input class="checkbox" type="checkbox">
-                        <span class="checkbox-icon"></span></label>
-                        Погоджуюсь з розсилкою та пріймаю 
+                        <svg class="checkbox-icon"><use href="./images/symbol-defs.svg#icon-vector"></use></svg>
+                        <span class="contract-text"> Погоджуюсь з розсилкою та приймаю</span>
                         <a href="" class="contract">Умови договору</a>
+                        </label>
                     </span>
                 </div>
 
